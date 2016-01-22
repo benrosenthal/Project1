@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:focusableInTouchMode="true"
+    android:background="@drawable/bg_gradient">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/addToDoList"
+        android:hint="Add New To Do List"
+        android:layout_marginTop="75dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"/>
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/listView"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/addButton"
+        android:textAlignment="center"
+        android:scrollingCache="false"
+        />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:id="@+id/picIfNoLists"
+        android:src="@drawable/notepad"
+        android:layout_below="@+id/addButton"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="66dp"
+        android:layout_alignEnd="@+id/listView"
+        android:layout_alignBottom="@+id/listView"
+        android:visibility="visible"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add"
+        android:id="@+id/addButton"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/addToDoList"
+        android:layout_centerHorizontal="true"
+        android:background="#e37b7b"
+        android:textStyle="bold"
+        android:textSize="20sp"/>
+
+
+</RelativeLayout>
